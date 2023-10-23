@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App-Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/quiz_icon.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="card-header">
+
+            <h1 class="title">Quiz</h1>
+            <p class="time-text">Time: <span id="time"></span></p>
+
+        </div><!--.card-header-->
+
+
+
+        <div class="card-body">
+
+            <h2 class="question-text">¿PREGUNTA 1?</h2>
+            <div class="container-questions">
+                <button class="btn" value="a1">Option 1</button>
+                <button class="btn" value="a2">Option 2</button>
+                <button class="btn" value="a3">Option 3</button>
+                <button class="btn" value="a4">Option 4</button>
+
+            </div>
+
+        </div><!--.card-body-->
+
+        <div class="card-footer">
+
+            <p id="progress"> 1 of 5 Question</p>
+            <button id="next">Next</button>
+
+        </div><!--.card-footer-->
+
+    </div><!--.card-->
+    
+    <script src="app/quiz.js"></script>
+</body>
+
+</html>
