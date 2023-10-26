@@ -1,0 +1,109 @@
+body {
+    background-image: url('images/pexels-mathias-reding-4394240.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card { /*Contenedor super hero*/
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 3% 0 0 8%; /*Cambiar a margin*/
+    color: #e8f2ff;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+
+.card-header { /*Contenedor del titulo y del time*/
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.card-body { /*Contenedor hero de la pregunta y del hero de los buttons*/
+    /* display: flex;
+    flex-direction: column;*/
+} 
+
+.container-questions button { /*Contenedor hero de los buttons*/
+    display: flex;
+    flex-direction: column;
+    border-radius: 100px;
+    border: none;
+    margin-top: 2%;
+    padding: 10px 20px;
+    /* background-color: transparent; */
+}
+
+.container-questions button:hover { /*Botones que se encuentran dentro del div clase*/
+    background-color: #5880ff;
+    color: #d5e6ff;
+    cursor: url('images/icons8-cuando-quest-32.png'), pointer;
+}
+
+.card-footer button { /*Button next*/
+    background-color: aquamarine;
+    border-radius: 15%;
+    width: 35%;
+}
+
+.card-footer button:hover {
+    background-color: #5880ff;
+}
+
+
+.title { /*h1*/
+    width: 195px;
+    font-size: 30px;
+    overflow: hidden;
+    border-right: .13em solid #b0e0e6;
+    white-space: nowrap;
+    letter-spacing: 2.5px;
+    animation: typing 3.5s steps(15, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing { /* @keyframes typing: Este keyframe se utiliza para controlar la animación del texto en la clase .title. En particular, esta animación hace que el texto aparezca letra por letra.
+
+    from: En el primer paso (from), la propiedad width del texto se establece en 0, lo que significa que el texto comienza sin ancho, es decir, no se ve.
+    
+    to: En el último paso (to), la propiedad width se establece en 50%, lo que significa que el texto alcanza su ancho completo.
+    
+    Entonces, durante la animación, el texto se "escribe" letra por letra a medida que la propiedad width se anima desde 0% hasta 50%. La animación dura 3.5 segundos y se divide en 15 pasos (steps(15, end)), lo que hace que el texto se muestre gradualmente letra por letra.
+    
+    @keyframes blink-caret: Este keyframe controla la animación del cursor parpadeante al final del texto en la clase .title.
+    
+    from y to: Estos pasos hacen que el cursor cambie de color de manera que parezca que está parpadeando. Durante la animación, el cursor alterna entre un color transparente (invisible) y un color determinado (#b0e0e6) para crear el efecto de parpadeo.
+    Estos keyframes son esenciales para lograr el efecto de texto que aparece letra por letra con un cursor parpadeante al final. Puedes ajustar la duración de la animación y otros valores según tus preferencias para controlar la velocidad y el aspecto de la animación.
+    
+    
+    
+    
+    
+    */
+    from {
+        width: 0;
+    }
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #b0e0e6;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        background-image: url('images/pexels-ann-h-10981240.jpg');
+    }
+    
+    .card {
+        margin: 20px 0 0 20px;
+    }
+}
+
+
